@@ -7,22 +7,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,100&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="../style.css">
     <title>Desafio1 coderhouse</title>
 </head>
 <body>
     <header>
         <h1>Hotel Mercedes</h1> 
-    <nav>
-        <a href="/index.html">Inicio</a>
-        <a href="/pages/contacto.html">Contacto</a>
-        <a href="/pages/habitaciones.html">Habitaciones</a>
-        <a href="/pages/ubicacion.html">Ubicacion</a>
-        <div class="activo"> <a href="/pages/comentarios.html">Nosotros</a></div>
-      </nav>
+<nav class="navbar navbar-expand-lg bg">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+        </li>
+        <li class="nav-item">
+            <div class="activo"><a class="nav-link" href="nosotros.html">Nosotros</a></div>
+        </li>
+    </ul>
+</div>
+</div>
+</nav>
 </header>
 <main>
-    <section class="nosotros">
+ <div class="container-nosotros">
+  <article class="grid-parrafo">
+    <p>Somos un hotel de 3 estrellas ubicado en la ciudad de Mercedes, Buenos Aires, Argentina. Estamos comprometidos a brindar a nuestros huéspedes una experiencia de viaje inolvidable.
+    Ofrecemos habitaciones cómodas y espaciosas, con todas las comodidades que necesita para relajarse y disfrutar de su estadía. También contamos con un restaurante, una piscina y un spa, para que pueda disfrutar de todo lo que la ciudad tiene para ofrecer.
+    Mercedes es una ciudad vibrante con una rica historia y cultura. Hay muchos festivales y eventos que se celebran durante todo el año, por lo que siempre hay algo nuevo que ver y hacer.
+    Si está buscando un lugar para alojarse en Mercedes, ¡no busque más! El Hotel Fiesta es la opción perfecta para usted.</p>
+    
+</article>
+  <article class="grid-imagen1"><img src="/img/imagen-hotel-nstros-1.webp" alt=""></article>
+  <article class="grid-imagen2"><img src="/img/imagen-hotel-nstros-2.webp" alt="" height="400px"></article>
+  <article class="grid-imagen3"><img src="/img/imagen-hotel.nsotrs.webp" alt=""></article>
+  <article class="grid-imagen4"><img src="/img/hotel-presidente-4s.jpg" alt=""></article>
+  
+    
+</div>
+<!-- 
+<section class="nosotros">
 <div class="container-nosotros">
 <div class="texto">
         <div class="parrafo-1">
@@ -40,15 +76,16 @@
  <div class="imagenes">
          <div class="img1"><img src="/img/imagen-hotel-nstros-1.webp" alt="hotel"></div>
          <div class="img2"><img src="/img/imagen-hotel.nsotrs.webp" alt="hotel"></div>
-         <div class="img3"><img src="/img/imagen-hotel-nstros-2.webp" alt=""></div>
+         <div class="img3"><img src="/img/imagen-hotel-nstros-2.webp" alt="hotel"></div>
  </div>
 </div>
 
  </section>
-
+ -->
 </main>
 <footer>
     <span>Hotel Mercedes Todos los derechos reservados</span>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

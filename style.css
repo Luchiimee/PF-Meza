@@ -18,7 +18,22 @@ h1{
        font-family: 'Poppins', sans-serif;
       
 }
-nav a{
+.navbar-toggler{
+    background-color: white;
+    box-shadow: none;
+}
+
+.navbar-nav .nav-link {
+    color: whitesmoke;
+
+}
+
+li{
+padding: 0px 30px;
+}
+
+/*
+nav li a{
     text-decoration: none;
     padding: 5px;
     margin: 2px;
@@ -27,15 +42,18 @@ nav a{
     font-size: 1.2em;
     color: aliceblue;
     font-family: 'Poppins', sans-serif;
+    
    
 }
-nav{
+nav ul{
     display: flex;
     text-align: center;
     margin: auto;
     align-items: center;
     justify-content: center;
-}
+    list-style-type: none;
+    
+}*/
       
 .texto-foto p{
     color: white;
@@ -45,7 +63,7 @@ nav{
     font-size: 1.3rem;
     line-height: 40px;
     font-style: italic;
-    
+   
 
 }
 
@@ -150,21 +168,21 @@ footer span{
 }
 /* Contacto web */
 /* formulario */
-@media (min-width: 476px){
-    form {
+@media (min-width: 992px){
+form {
         font-family: 'Poppins', sans-serif;
         color: rgb(255, 255, 255);
         
-    }
-    .datos{
+}
+.datos{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 10px;
         
         
-    }
-    .formulario {
+}
+.formulario {
         display: flex;
         flex-direction:column;
         margin: 150px auto;
@@ -172,31 +190,29 @@ footer span{
         height: 500px;
         width: 90%;
         padding: 20px 0px;
-    }
+}
 
-    .comentario {
+.comentario {
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
         
-    }
+}
 
-    textarea {
+textarea {
         width: 60%;
         margin: 10px auto; 
         display: block;
         padding: 5px;
         font-family: 'Poppins', sans-serif;
         border-radius: 6px;
-    }
-    input{
+}
+input{
         border-radius: 4px;
     }
-    .texto-foto p {
-        text-align: center;
-    }
+    
    .button{
     display: block;
     width: 20%;
@@ -204,7 +220,13 @@ footer span{
     margin: auto;
     border-radius: 10px;
    }
+.container-fluid{
+    
+    flex-direction: column-reverse;
+    
+}
 
+ 
 }
 
 
@@ -248,10 +270,7 @@ footer span{
     flex-direction: row; 
     flex-wrap: wrap;
     justify-content:center;
-    
     margin: 50px;
-
-    
 }
 .boton-reserva {
     font-weight: bold;
@@ -275,35 +294,34 @@ footer span{
 
 }
   /* nav movil */
-@media (max-width : 475px){
-    nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 90px 0px 5px 0px;
-        padding: 1px 0px 0px 40px ;
-    
-    }
-    .texto-foto p {
+@media (max-width : 800px){
+
+.texto-foto p {
         font-size: 15px;
         text-align: center;
         padding: 8px;
        
-    }
-    .texto-foto img {
+}
+.texto-foto img {
         display: flex;
         max-height: 200px;
         margin: 5px auto;
     }
+.navbar>.container-fluid{
+    display: flex;
+    justify-content: end;
+}
+
 }
 /* formulario - movil */
 @media (max-width: 474px) {
-    form {
+
+form {
         font-family: 'Poppins', sans-serif;
         color: white;
         background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
         border-radius: 10px;
-    }
+}
 
     .formulario {
         display: flex;
@@ -340,56 +358,62 @@ footer span{
     
 }
 
-/* Tablet */ 
-
-@media (min-width: 476px) and (max-width: 992px) {
- 
-    body{
-        margin: auto;
-        text-align: center;
-        display: block;
-    }
-    .texto-foto img {
-        display: flex;
-        max-height: 300px;
-        margin: 5px auto;
-    }
-    .texto-foto p {
-        font-size: 16px;
-    }
-  
-}
 
 /* ubicacion */
-.direcion {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      "img img"
-      "titulo titulo"
-      "subtitulo subtitulo"
-      "texto texto";
-    align-items: center;
+
+.direccion, h2, h3, p {
     text-align: center;
-    color: aliceblue;
-    margin: 50px;
+    color: white;
+    margin: 10px auto;
+}
+
+  
+
+  
+
+/*nosotros*/
+
+.container-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "parrafo imagen1 imagen1 " 
+    "imagen2 imagen3 imagen4";
+    text-align: center; 
+    align-content: center;
+    justify-items: center;
+    gap: 25px 5px;
+    flex-direction: row; 
     
-  }
-  
-.direcion img {
-    grid-area: img;
-    justify-self: center;
 }
-  
-.direcion h2 {
-    grid-area: titulo;
+
+
+.grid-parrafo{
+grid-area: parrafo;
+color: white;
+font-size: 20px;
+
 }
-  
-.direcion h3 {
-    grid-area: subtitulo;
+.grid-imagen1{
+    grid-area: imagen1;
+    color: white;
+    
+    
 }
+.grid-imagen2{
+    grid-area: imagen2;
+    color: white;
+    
+    
+}
+.grid-imagen3{
+    grid-area: imagen3;
+    color: white;
   
-.direcion p {
-    grid-area: texto;
+}
+.grid-imagen4{
+grid-area: imagen4;
+color: white;
+
 }
