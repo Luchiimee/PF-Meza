@@ -13,10 +13,15 @@ body{
 
 
 h1{
-       color: white;
-       margin: 25px;
-       font-family: 'Poppins', sans-serif;
-      
+     color: white;
+     margin: 25px;
+     font-family: 'Poppins', sans-serif;   
+}
+.container-fluid{
+    
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    
 }
 .navbar-toggler{
     background-color: white;
@@ -32,28 +37,6 @@ li{
 padding: 0px 30px;
 }
 
-/*
-nav li a{
-    text-decoration: none;
-    padding: 5px;
-    margin: 2px;
-    text-align: center;
-    align-items: center;
-    font-size: 1.2em;
-    color: aliceblue;
-    font-family: 'Poppins', sans-serif;
-    
-   
-}
-nav ul{
-    display: flex;
-    text-align: center;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    
-}*/
       
 .texto-foto p{
     color: white;
@@ -64,7 +47,6 @@ nav ul{
     line-height: 40px;
     font-style: italic;
    
-
 }
 
 .texto-foto{
@@ -79,28 +61,11 @@ nav ul{
 .texto-foto img {
     margin: auto; 
     text-align: center;
-    display: inline-block;
     max-height: 600px;
     
-    
 }
-footer{
-    
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    margin-top: auto;
-}
-footer span{
-    text-align: center;
-    font-size: 0.6rem;
-    font-family: 'Poppins', sans-serif;
-   
-}
-/* nav hover */ 
 
+/* nav hover */ 
 .activo {
     display: inline-block;
     padding-bottom: 2px;
@@ -116,59 +81,9 @@ footer span{
     
 }
 
-/* contacto */
-.img-contacto{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:center;
-    margin: 150px auto 10px ;
-
-}
-.img-pieza{
-    display: flex;
-    flex-direction:row;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 1px;
-    max-width: 500px;
-    background-color: aliceblue;
-    margin: 32px ; 
-}
-.img-pieza img{
-    max-width: 100%;
-    border-radius: 5px;
-}
-.contacto  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 50px auto; 
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-size: 20px;
-    flex-wrap: wrap;
-}
-
- .contacto-img {
-    display: flex;
-    flex-direction: row;
-    margin: 2px 100px; 
-    align-items: center;
-    padding: 5px 1px;
-    
-}
-
-.contacto img {
-    width: 20%;
-    max-width: 100px;
-    margin: auto 10px ; 
-   
-}
-/* Contacto web */
+/*     contacto     */
 /* formulario */
-@media (min-width: 992px){
+
 form {
         font-family: 'Poppins', sans-serif;
         color: rgb(255, 255, 255);
@@ -178,9 +93,7 @@ form {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 10px;
-        
-        
+        padding: 10px;      
 }
 .formulario {
         display: flex;
@@ -197,8 +110,7 @@ form {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 10px;
-        
+        margin-top: 10px;    
 }
 
 textarea {
@@ -213,24 +125,18 @@ input{
         border-radius: 4px;
     }
     
-   .button{
+.button{
     display: block;
     width: 20%;
     height: 50px;
     margin: auto;
     border-radius: 10px;
-   }
-.container-fluid{
-    
-    flex-direction: column-reverse;
-    
-}
-
- 
 }
 
 
-/*habitaciones*/
+
+
+/*  habitaciones   */
 .img-habitaciones{
     display: flex;
     flex-direction:column;
@@ -242,8 +148,17 @@ input{
     margin: 50px 5px ;
     height: 470px;
    
-    
-    
+}
+.texto-info > h3 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+  
+.texto-info > p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
 }
   
 .img-habitaciones img {
@@ -251,11 +166,9 @@ input{
     border-radius: 5px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    
-    
-}
 
-  
+}
+ 
 .img-habitaciones img:hover {
     transform: scale(1.02);
   }
@@ -278,25 +191,55 @@ input{
     padding: 5px;
     border-radius: 5px;
     border: solid 1px;
-    margin-left: 5px;
+    margin: 100px 20px 50px 0px;
     text-align: center;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.766);
    
-  }
+}
   
 .boton-reserva:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
     color:white;
-    background-color: black;
+    background-color: rgb(6, 121, 77);
     padding: 5px;
 
 }
-  /* nav movil */
-@media (max-width : 800px){
+  /* medida card/habitaciones  */
+@media (min-width: 363px){
+    .img-habitaciones {
+      height: 380px;
+}
+}
+@media (min-width: 1023px){
+    .img-habitaciones{
+        height: 500px;
+    }
+}
 
-.texto-foto p {
+/* nav / index - movil */
+@media (max-width:990px){
+.navbar> .container-fluid{
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    display: none;
+}
+
+
+.navbar>.container-fluid{
+    display: flex;
+    justify-content: end;
+}
+.contacto{
+    
+    display: flex;
+    justify-content: center;
+}
+}
+/* formulario - movil */
+@media (max-width: 474px) {
+ .texto-foto p {
         font-size: 15px;
         text-align: center;
         padding: 8px;
@@ -306,15 +249,7 @@ input{
         display: flex;
         max-height: 200px;
         margin: 5px auto;
-    }
-.navbar>.container-fluid{
-    display: flex;
-    justify-content: end;
 }
-
-}
-/* formulario - movil */
-@media (max-width: 474px) {
 
 form {
         font-family: 'Poppins', sans-serif;
@@ -323,26 +258,37 @@ form {
         border-radius: 10px;
 }
 
-    .formulario {
+.formulario {
         display: flex;
         flex-direction: column;
         margin: 40px auto;
-    }
+}
 
-    .comentario {
+.comentario {
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
-    }
+}
 
-    textarea {
+textarea {
         width: 80%;
         display: block;
         margin:  5px auto;
         
-    }
+}
+iframe{
+ width: 80%;
+}
+.contacto{
+    
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    font-size: 12px;
+    justify-content: center;
+}
 }
 
 .formulario div {
@@ -367,53 +313,59 @@ form {
     margin: 10px auto;
 }
 
-  
-
-  
-
 /*nosotros*/
-
-.container-nosotros{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
-    "parrafo imagen1 imagen1 " 
-    "imagen2 imagen3 imagen4";
-    text-align: center; 
-    align-content: center;
-    justify-items: center;
-    gap: 25px 5px;
-    flex-direction: row; 
-    
+.contacto{
+    margin: 50px 0;
 }
-
-
-.grid-parrafo{
-grid-area: parrafo;
-color: white;
-font-size: 20px;
-
-}
-.grid-imagen1{
-    grid-area: imagen1;
+.contacto, span {
+    text-align: center;
     color: white;
-    
-    
+   
 }
-.grid-imagen2{
-    grid-area: imagen2;
-    color: white;
-    
-    
-}
-.grid-imagen3{
-    grid-area: imagen3;
-    color: white;
-  
-}
-.grid-imagen4{
-grid-area: imagen4;
-color: white;
+.icono{
+    margin: 0 80px;
+    font-family: poppins;
+    display: inline;
 
+}
+
+.icono > img{
+    
+    height: 70px;
+    padding: 5px;
+   
+}
+
+
+.parrafo{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    flex-direction:column;
+    justify-content:center;
+    width: 80%;
+    
+}
+.parrafo > p {
+    width: 100%;
+    font-size: 20px;
+    margin: 100px auto;
+    
+}
+/*  footer   */
+footer{
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+footer span{
+    text-align: center;
+    font-size: 0.6rem;
+    font-family: 'Poppins', sans-serif;
+   
 }
