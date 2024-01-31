@@ -1,0 +1,399 @@
+/* Utilities */
+/* Voy a importar mi variables */
+/* nav */
+header {
+  text-align: center;
+}
+
+.navbar li {
+  padding: 20px;
+}
+.navbar a {
+  color: white;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
+}
+
+.navbar button {
+  background-color: white;
+}
+
+.container-fluid {
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+
+.navbar-nav .nav-link {
+  color: whitesmoke;
+}
+
+.nav-tog {
+  background-color: white;
+  box-shadow: none;
+}
+
+.activo, a:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav-item {
+  padding: 0px 20px;
+}
+
+.nav-link {
+  color: aliceblue;
+}
+.nav-link:hover {
+  border-bottom: 1px solid rgb(97, 97, 97);
+  padding-bottom: 1px;
+}
+
+.button {
+  display: block;
+  width: 20%;
+  height: 50px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.boton-reserva {
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px;
+  margin: 100px 20px 50px 0px;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.766);
+}
+
+.boton-reserva:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  color: white;
+  background-color: rgb(6, 121, 77);
+  padding: 5px;
+}
+
+/* nosotros */
+.icono {
+  margin: 0px 80px;
+}
+
+.icono > img {
+  height: 70px;
+}
+
+.parrafo {
+  text-align: center;
+  align-items: center;
+}
+.parrafo p {
+  text-align: center;
+  color: white;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.contacto {
+  display: flex;
+  margin: 200px auto;
+  justify-content: center;
+}
+.contacto span {
+  padding: 10px;
+  color: aliceblue;
+}
+
+/* formulario  */
+form {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.datos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 150px auto;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  height: 580px;
+  width: 90%;
+  padding: 20px 0px;
+}
+
+.comentario {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+textarea {
+  width: 60%;
+  margin: 10px auto;
+  display: block;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
+}
+
+input {
+  border-radius: 4px;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: white;
+  margin: 15px 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.container-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  font-style: normal;
+}
+.container-index p {
+  color: white;
+  margin-right: 80px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+  font-style: italic;
+  text-align: center;
+  width: 40%;
+}
+
+h2 {
+  width: calc(100% - 704px);
+  margin-right: 1000px;
+  background-color: rgb(250, 248, 248);
+  padding-left: 105px;
+  border-radius: 0px 10px 10px 0px;
+  font-weight: bold;
+  box-shadow: 11px 5px 0px 0px rgba(157, 156, 156, 0.75);
+}
+
+.img-html {
+  border-radius: 100px 0px 0px 100px;
+  width: 50%;
+}
+
+.img-sass {
+  position: absolute;
+  top: 400px;
+  right: 450px;
+  width: 20%;
+  border-radius: 0px 80px 80px 0px;
+}
+
+/*
+/*footer  */
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  padding: 5px;
+}
+
+main {
+  margin: 5px;
+}
+
+@media (max-width: 470px) {
+  main {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .container-index > p {
+    padding: 0 180px;
+    text-align: center;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 30px;
+  }
+  .container-index {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  h2 {
+    width: calc(100% - 1500px);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-left: 650px;
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+  .img-html {
+    width: 20%;
+  }
+  .contacto {
+    text-align: center;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: auto;
+  }
+  .contacto span {
+    color: white;
+    display: flex;
+    text-align: justify;
+  }
+}
+.medio-telefono {
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+@media (max-width: 1248px) and (min-width: 471px) {
+  main {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .container-index > p {
+    max-width: 50%;
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+  .container-index {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: none;
+  }
+  h2 {
+    width: calc(100% - 900px);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    display: inline-block;
+    margin-bottom: 0px;
+    padding-left: 500px;
+  }
+  .img-html {
+    width: 50%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .img-sass {
+    display: none;
+  }
+  .contacto {
+    text-align: center;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: auto;
+  }
+  .contacto span {
+    color: white;
+    display: flex;
+    text-align: justify;
+  }
+  .card-habitaciones {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .card-habitaciones {
+    width: 100%;
+  }
+}
+/*  ubicacion  */
+.direccion {
+  text-align: center;
+  margin: 80px auto;
+}
+.direccion h3 {
+  color: white;
+  margin: 15px;
+}
+.direccion h4, .direccion p {
+  color: white;
+}
+
+.img-habitaciones {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  max-width: 500px;
+  background-color: aliceblue;
+  margin: 50px 15px;
+  width: 470px;
+  height: 440px;
+}
+
+.texto-info > h3 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.texto-info > p {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.img-habitaciones {
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-habitaciones:hover {
+  transform: scale(1.02);
+}
+
+.texto-info {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-habitaciones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* movil */
+
+/*# sourceMappingURL=style.css.map */

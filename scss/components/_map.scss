@@ -1,0 +1,15 @@
+/*  ubicacion  */ 
+.direccion {
+    text-align: center;
+    margin: 80px auto;
+    
+    h3{
+        color: map-get($colores,tipography);
+        margin: 15px;
+        
+    }
+    h4, p{
+        color: map-get($colores,tipography); 
+    }
+    
+}

@@ -1,0 +1,50 @@
+.img-habitaciones{
+    display: flex;
+    flex-direction:column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 500px;
+    background-color: aliceblue;
+    margin: 50px 15px;
+    @include medidas(470px, 440px) 
+}
+
+.img-habitaciones{
+    @extend .img-habitaciones
+}
+.texto-info > h3 {
+    color: black;
+    font-family: $typography;
+    font-weight: bold;
+
+}
+  
+.texto-info > p {
+    color: black;
+    font-family: $typography;
+}
+  
+.img-habitaciones  {
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+
+}
+ 
+.img-habitaciones:hover {
+    transform: scale(1.02);
+  }
+  
+.texto-info {
+    color: black;
+    font-family:$typography;
+}
+
+.card-habitaciones{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 50px;
+}

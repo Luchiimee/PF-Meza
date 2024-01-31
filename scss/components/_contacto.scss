@@ -1,0 +1,29 @@
+/* nosotros */
+.icono{
+    margin:0px  80px;
+}
+.icono > img {
+    
+    height: 70px;
+}
+
+.parrafo{
+    text-align: center;
+    align-items: center;
+    p{
+        text-align: center;
+        color: white;
+        width: 80%;
+        margin: 100px auto;
+    }
+}
+.contacto {
+    display: flex;
+    margin:200px auto;
+    
+    justify-content: center;
+    span{
+        padding: 10px;
+        color: aliceblue;
+    }  
+}

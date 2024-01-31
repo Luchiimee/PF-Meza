@@ -1,0 +1,42 @@
+/* formulario  */
+form {
+    font-family: $typography;
+    color: map-get($colores,tipography );
+    
+}
+.datos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;      
+}
+.formulario {
+    display: flex;
+    flex-direction:column;
+    margin: 150px auto;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); 
+    height: 580px;
+    width: 90%;
+    padding: 20px 0px;
+    
+}
+
+.comentario {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;    
+}
+
+textarea {
+    width: 60%;
+    margin: 10px auto; 
+    display: block;
+    padding: 5px;
+    font-family: $typography;
+    border-radius: 6px;
+}
+input{
+    border-radius: 4px;
+}
