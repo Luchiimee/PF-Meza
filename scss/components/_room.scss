@@ -7,7 +7,8 @@
     max-width: 500px;
     background-color: aliceblue;
     margin: 50px 15px;
-    @include medidas(470px, 440px) 
+    @include medidas(470px, 510px);
+    
 }
 
 .img-habitaciones{
