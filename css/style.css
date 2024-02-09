@@ -101,19 +101,44 @@ header {
 .contacto {
   display: flex;
   margin: 200px auto;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .contacto span {
   padding: 10px;
   color: aliceblue;
 }
 
-/* formulario  */
-form {
+.form-nosotros {
+  display: flex;
+  margin: auto 20px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  align-items: center;
+}
+.form-nosotros label {
+  margin: 5px;
   color: white;
 }
+.form-nosotros input {
+  margin: 5px;
+  padding: 1px;
+}
 
+.button-nosotros {
+  font-weight: bold;
+  margin: 80px;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* formulario  */
 .datos {
   display: flex;
   flex-wrap: wrap;
@@ -122,13 +147,21 @@ form {
 }
 
 .formulario {
-  display: flex;
-  flex-direction: column;
-  margin: 150px auto;
+  margin: 5px auto;
+  padding: 15px;
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-  height: 580px;
-  width: 90%;
-  padding: 20px 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  max-width: 80%;
+  align-items: center;
+  gap: 15px;
+  height: 600px;
+}
+.formulario form {
+  width: 80%;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .comentario {
@@ -140,20 +173,80 @@ form {
 }
 
 textarea {
-  width: 60%;
+  width: 100%;
   margin: 10px auto;
   display: block;
   padding: 5px;
   font-family: "Poppins", sans-serif;
   border-radius: 6px;
+  background-color: #15284f;
+  border: 2px solid white;
 }
 
-input {
+textarea:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+
+.input-form {
   border-radius: 4px;
+  background-color: #15284f;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid white;
+  display: block;
+  width: 100%;
+}
+
+.input-form:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+
+.button-form {
+  background-color: #15284f;
+  color: white;
+  border: 2px solid white;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 500;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  transition: 0.5s ease;
+  user-select: none;
+  width: 100%;
+}
+
+.formulario .button-form:hover,
+.formulario .button-form:focus {
+  color: rgb(79, 235, 249);
+  border: 2px solid rgb(0, 255, 255);
+}
+
+.direccion {
+  height: 400px;
+  margin-left: 20px;
+}
+.direccion h3 {
+  color: white;
+  margin: 15px;
+}
+.direccion h4, .direccion p {
+  color: white;
 }
 
 body {
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(128, 128, 128);
   flex-direction: column;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
@@ -220,35 +313,58 @@ footer {
 
 main {
   margin: 5px;
+  margin: auto;
 }
 
 @media (max-width: 470px) {
   main {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    overflow-x: hidden;
   }
-  .container-index > p {
-    padding: 0 180px;
+  .formulario {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .formulario .direccion, .formulario iframe {
+    width: 100%;
+    height: 500px;
     text-align: center;
     margin: auto;
-    margin-top: -50px;
-    margin-bottom: 30px;
+  }
+  .texto-foto {
+    margin: auto;
+    text-align: center;
+  }
+  .texto-foto h2 {
+    width: calc(80% - 14px);
+    margin-right: 1000px;
+    background-color: rgb(250, 248, 248);
+    padding-left: 80px;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: bold;
+    box-shadow: 11px 5px 0px 0px rgba(157, 156, 156, 0.75);
+  }
+  .img-sass {
+    display: none;
+  }
+  .img-html {
+    width: 90%;
   }
   .container-index {
     display: flex;
     flex-direction: column-reverse;
+    text-align: center;
   }
-  h2 {
-    width: calc(100% - 1500px);
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    margin-left: 650px;
-    display: inline-block;
-    margin-bottom: 0px;
-  }
-  .img-html {
-    width: 20%;
+  .container-index p {
+    font-size: 30px;
+    width: 100%;
   }
   .contacto {
     text-align: center;
@@ -263,18 +379,19 @@ main {
     display: flex;
     text-align: justify;
   }
-}
-.medio-telefono {
-  border-radius: 50%;
-  background-color: whitesmoke;
-}
-
-@media (max-width: 1248px) and (min-width: 471px) {
-  main {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  .img-habitaciones {
+    max-height: 400px;
   }
+  .card-habitaciones img {
+    max-width: 100%;
+    text-align: center;
+    margin: 5px;
+  }
+  .texto-info {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1248px) and (min-width: 471px) {
   .container-index > p {
     max-width: 50%;
     margin: auto;
@@ -306,39 +423,60 @@ main {
   .img-sass {
     display: none;
   }
-  .contacto {
-    text-align: center;
-    margin: 5px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    vertical-align: auto;
-  }
-  .contacto span {
-    color: white;
-    display: flex;
-    text-align: justify;
-  }
   .card-habitaciones {
     width: 100%;
   }
 }
 @media (max-width: 1024px) {
   .card-habitaciones {
-    width: 100%;
+    width: 80%;
   }
 }
 /*  ubicacion  */
-.direccion {
+.container-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  max-width: 80%;
+  margin: auto;
+}
+
+.card-blog {
+  width: 18rem;
+  display: flex;
+  margin: 10px auto;
   text-align: center;
-  margin: 80px auto;
+  justify-content: center;
 }
-.direccion h3 {
-  color: white;
-  margin: 15px;
+.card-blog img {
+  border-radius: 5px;
+  width: 100%;
 }
-.direccion h4, .direccion p {
+
+.card-blog:hover {
+  transform: scale(1.02);
+}
+
+.texto-blog {
+  margin: 30px auto;
+  text-align: center;
+}
+.texto-blog h3 {
   color: white;
+}
+
+.texto-blog p {
+  color: white;
+}
+
+div .titulo-blog {
+  color: white;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  display: block;
+  font-size: 50px;
 }
 
 .img-habitaciones {

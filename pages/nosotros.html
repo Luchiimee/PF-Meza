@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Somos un hotel para la familia,hotel, hotel mercedes, hotel, mercedes">
+    <meta name="keywords" content="hotel, Hotel Mercedes, Descuentos, habitaciones,lugar">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +35,7 @@
             <a class="nav-link" href="contacto.html">Contacto</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+            <a class="nav-link" href="quehacer.html">Que Hacer</a>
         </li>
         <li class="nav-item">
             <div class="activo"><a class="nav-link" href="nosotros.html">Nosotros</a></div>
@@ -42,6 +46,9 @@
 </nav>
 </header>
 <main>
+    <div>
+        <span class="titulo-blog">Nosotros</span>
+      </div>
  <div class="container-nosotros">
   <article class="parrafo">
     <p>Somos un hotel de 3 estrellas ubicado en la ciudad de Mercedes, Buenos Aires, Argentina. Estamos comprometidos a brindar a nuestros huéspedes una experiencia de viaje inolvidable.
@@ -50,20 +57,37 @@
     Si está buscando un lugar para alojarse en Mercedes, ¡no busque más! El Hotel Fiesta es la opción perfecta para usted.</p>
     
 </article>
+<form class="form-nosotros" action="#" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+
+    <label for="celular">Número de Celular:</label>
+    <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" placeholder="Ej. 1234567890" required>
+
+    <label for="cantidad-personas">Cantidad de Personas:</label>
+    <input type="number" id="cantidad-personas" name="cantidad-personas" min="1" required>
+
+    <label for="fecha-reserva">Fecha de Reserva:</label>
+    <input type="date" id="fecha-reserva" name="fecha-reserva" required>
+
+    <button class="button-nosotros" type="submit">Enviar</button>
+</form>
 <section class="contacto">
     <div class="icono">
     <img src="../img/llamada-telefonica.png"alt="telefono">
     <span>232440000</span></div>
    <div class="icono"> 
-    <img class="medio-telefono" src="../img/viejo-telefono-tipico.png" alt="whatsapp">
+    <img class="medio-telefono" src="../img/whatsapp.png" alt="whatsapp">
     <span>232440000</span></div>
    <div class="icono"> 
-    <img src="../img/icons8-instagram.svg" alt="instagram">
+    <img src="../img/instagram.png" alt="instagram">
     <span>hotel-mercedes</span></div>
 </section>
-</section>
-    
 </div>
+
 
 </main>
 <footer>

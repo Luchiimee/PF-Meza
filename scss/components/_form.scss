@@ -1,9 +1,5 @@
 /* formulario  */
-form {
-    font-family: $typography;
-    color: map-get($colores,tipography );
-    
-}
+
 .datos{
     display: flex;
     flex-wrap: wrap;
@@ -11,13 +7,21 @@ form {
     padding: 10px;      
 }
 .formulario {
-    display: flex;
-    flex-direction:column;
-    margin: 150px auto;
+    margin: 5px auto;
+    padding: 15px;
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); 
-    height: 580px;
-    width: 90%;
-    padding: 20px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    max-width: 80%;
+    align-items: center;
+    gap: 15px;
+    height: 600px; 
+    form{
+       width: 80%;
+       font-family: $typography;
+       color: map-get($colores,tipography );
+    }
     
 }
 
@@ -30,13 +34,77 @@ form {
 }
 
 textarea {
-    width: 60%;
+    width: 100%;
     margin: 10px auto; 
     display: block;
     padding: 5px;
     font-family: $typography;
     border-radius: 6px;
+    background-color: #15284f;
+    border: 2px solid white;
+   
 }
-input{
+textarea:focus{
+    color:rgb(0, 255, 255);
+    background-color:#212121 ;
+    outline-color:rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+.input-form{
     border-radius: 4px;
+    background-color: #15284f;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid white;
+    display: block;
+    width: 100%;
+
+    
 }
+.input-form:focus{
+    color:rgb(0, 255, 255);
+    background-color:#212121 ;
+    outline-color:rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+.button-form{
+    background-color: #15284f;
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    transition: 0.5s ease;
+    user-select: none;
+    width: 100%;
+}
+.formulario .button-form:hover,
+.formulario .button-form:focus {
+    color: rgb(79, 235, 249);
+   
+    border: 2px solid rgb(0, 255, 255) ;
+    
+    
+}
+.direccion {
+    height: 400px;
+    margin-left: 20px;
+     
+     h3{
+         color: map-get($colores,tipography);
+         margin: 15px;
+         
+     }
+     h4, p{
+         color: map-get($colores,tipography); 
+     }
+     
+ }

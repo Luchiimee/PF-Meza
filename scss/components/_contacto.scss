@@ -19,11 +19,39 @@
 }
 .contacto {
     display: flex;
-    margin:200px auto;
-    
-    justify-content: center;
+    margin: 200px auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
     span{
         padding: 10px;
         color: aliceblue;
     }  
+}
+.form-nosotros{
+    display: flex;
+    margin: auto 20px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: $typography;
+    border-radius: 10px;
+    align-items: center;
+    label{
+        margin: 5px;
+        color: white;
+    }
+    input{
+        margin: 5px;
+        padding: 1px;
+    }
+}
+.button-nosotros{
+    font-weight: bold;
+    margin: 80px;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
 }
