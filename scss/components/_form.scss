@@ -97,14 +97,6 @@ textarea:focus{
 .direccion {
     height: 400px;
     margin-left: 20px;
-     
-     h3{
-         color: map-get($colores,tipography);
-         margin: 15px;
-         
-     }
-     h4, p{
-         color: map-get($colores,tipography); 
-     }
+   
      
  }

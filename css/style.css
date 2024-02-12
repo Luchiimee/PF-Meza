@@ -144,7 +144,9 @@ header {
   margin: 5px;
   padding: 1px;
   border-radius: 2px;
-  border: solid 2px;
+  border: solid 2px rgb(7, 7, 68);
+  max-width: 80%;
+  width: 30%;
 }
 
 .button-nosotros {
@@ -153,7 +155,7 @@ header {
   font-size: 20px;
   padding: 10px;
   border-radius: 10px;
-  width: 100%;
+  width: 20%;
   max-width: 60%;
 }
 
@@ -255,13 +257,6 @@ textarea:focus {
 .direccion {
   height: 400px;
   margin-left: 20px;
-}
-.direccion h3 {
-  color: white;
-  margin: 15px;
-}
-.direccion h4, .direccion p {
-  color: white;
 }
 
 body {
@@ -409,38 +404,74 @@ main {
   .texto-info {
     margin-top: 15px;
   }
+  .form-nosotros input {
+    width: 80%;
+  }
+  .button-nosotros {
+    display: inline-block;
+    width: 80%;
+    margin: 25px auto;
+  }
+  .button-nosotros {
+    display: inline-block;
+    width: 80%;
+    margin: 25px auto;
+  }
 }
 @media (max-width: 1248px) and (min-width: 471px) {
-  .container-index > p {
-    max-width: 50%;
-    margin: auto;
-    display: block;
-    text-align: center;
+  h2 {
+    width: calc(100% - 504px);
+    margin-right: 1000px;
+    background-color: rgb(250, 248, 248);
+    padding-left: 105px;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: bold;
+    box-shadow: 11px 5px 0px 0px rgba(157, 156, 156, 0.75);
+  }
+  .texto-foto {
+    margin: 0 auto;
   }
   .container-index {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
-    text-align: center;
+    margin: 0 auto;
+  }
+  .container-index .img-html {
+    width: 80%;
+  }
+  .container-index .img-sass {
+    margin-top: 100px;
+    margin-right: 100px;
+    width: 30%;
+  }
+  .container-index p {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contacto {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    margin: none;
+    flex-wrap: nowrap;
   }
-  h2 {
-    width: calc(100% - 900px);
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    margin-left: 200px;
-    display: inline-block;
-    margin-bottom: 0px;
-    padding-left: 500px;
+  .contacto .icono {
+    text-align: center;
+    padding: 10px;
   }
-  .img-html {
-    width: 50%;
+  .contacto span {
+    width: 100%;
+  }
+  .formulario {
     max-width: 100%;
-    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 10px auto;
   }
-  .img-sass {
-    display: none;
+  .formulario .direccion {
+    height: 100%;
   }
   .card-habitaciones {
     width: 100%;
@@ -458,7 +489,7 @@ main {
   justify-content: space-around;
   overflow: hidden;
   max-width: 80%;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .card-blog {
@@ -487,6 +518,7 @@ main {
 
 .texto-blog p {
   color: white;
+  max-height: 100%;
 }
 
 div .titulo-blog {

@@ -60,13 +60,17 @@
     label{
         margin: 5px;
         color: rgb(0, 0, 0);
+        
        
     }
     input{
         margin: 5px;
         padding: 1px;
         border-radius: 2px;
-        border: solid 2px;
+        border: solid 2px rgb(7, 7, 68);
+        max-width: 80%;
+        width: 30%;
+       
     
     }
 }
@@ -76,6 +80,6 @@
     font-size: 20px;
     padding: 10px;
     border-radius: 10px;
-    width: 100%;
+    width: 20%;
     max-width: 60%;
 }
